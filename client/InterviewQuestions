@@ -1,0 +1,27 @@
+Explain how to build stateful class components.
+    You need to create a constructor pass super inside then create your this.state,
+    giving it a value that you'd like to change later. 
+    Whenever you'd like to change the state you can use this.setState
+
+Describe the different phases of the component lifecycle.
+    Mounting is the creation of the component. Update would be the life of your
+    component and what happens throughout. Unmount is the death or end of the 
+    component.
+
+Demonstrate an understanding of class component lifecycle methods.
+    componentDidMount refers to the component successfully mounting you can use 
+    this to check if it mounts and if it does you can run a piece of code.
+    The render method is pure and cannot handle state inside of, whatever you pass
+    in it will give you the same result. In componentDidUpdate, once the updating 
+    happens the method reacts and does what you plug inside of it. If you don't 
+    have a conditional for this you might run into an infinite loop. componentWillUnmount
+    this is called before the component is destroyed and is used for cleanup.
+
+Define stateful logic.
+    Stateful logic is any kind of logic that somehow interacts with a state of 
+    something.
+
+Describe how to test a React component with React Testing Library.
+    You make a test.js version of it import the component into it then you begin 
+    writing code that imitates a users actions so that you won't have to do it 
+    yourself every single time and it will ultimately save you time.
